@@ -193,7 +193,7 @@ export default function Chatbot() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={handleKeyPress}
-            className="flex-1"
+            className="flex-1 dark:text-white"
           />
           <Button onClick={handleSend}>
             <Send className="h-4 w-4 mr-2" />
