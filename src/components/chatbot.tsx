@@ -118,7 +118,7 @@ export default function Chatbot() {
 
   const fetchBotResponse = async (userInput: string) => {
     try {
-      const response = await axios.post('http://localhost:3000/api/response', {
+      const response = await axios.post('https://collegechatbot.vercel.app/api/response', {
         search: userInput,
       });
       return response.data.responseText;
