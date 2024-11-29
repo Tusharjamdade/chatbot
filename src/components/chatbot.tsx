@@ -113,12 +113,12 @@ export default function Chatbot() {
     { id: 1, text: "Hello! How can I assist you today?", sender: 'bot' }
   ]);
   const [input, setInput] = useState('');
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const fetchBotResponse = async (userInput: string) => {
     try {
-      const response = await axios.post('https://collegechatbot.vercel.app/api/response', {
+      const response = await axios.post('http://localhost:3000//api/response', {
         search: userInput,
       });
       return response.data.responseText;
@@ -154,7 +154,7 @@ export default function Chatbot() {
   return (
     <div className={`flex flex-col h-screen ${darkMode ? 'dark' : ''}`}>
       <header className="bg-white dark:bg-gray-800 shadow-md py-4 px-6 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">ChatBot</h1>
+        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">M.B.E. Society's Chat Assistant</h1>
         <Button
           variant="ghost"
           size="icon"
