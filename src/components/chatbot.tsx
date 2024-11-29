@@ -154,7 +154,7 @@ export default function Chatbot() {
   return (
     <div className={`flex flex-col h-screen ${darkMode ? 'dark' : ''}`}>
       <header className="bg-white dark:bg-gray-800 shadow-md py-4 px-6 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">M.B.E. Society's Chat Assistant</h1>
+        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">M.B.E. Society&apos;s Chat Assistant</h1>
         <Button
           variant="ghost"
           size="icon"
